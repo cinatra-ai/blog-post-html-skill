@@ -39,7 +39,7 @@ This skill applies to the step that writes the HTML, and only that step is offer
 | table with a `---` row | `<table>` with `<thead>`, `<tbody>`, `<tr>`, `<th>` and `<td>` |
 
 - A link and an image keep their address exactly as written.
-- An address that starts with `javascript:`, `vbscript:` or `data:` is not a link: write the link text as plain text, or the image's alt text as plain text.
+- An address whose scheme is `javascript`, `vbscript` or `data` is not a link: write the link text as plain text, or the image's alt text as plain text. Decide this on the address with spaces, tabs and line breaks removed and in lower case, so `JaVaScRiPt:` and ` java	script:` count too.
 - Lines of one paragraph stay in one `<p>`, joined by a line break in the HTML source.
 
 ## Rule 3: nothing else goes into the HTML
