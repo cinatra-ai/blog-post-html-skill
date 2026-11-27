@@ -22,5 +22,6 @@ The rules a model follows to turn a blog post's approved markdown into HTML for 
 - Convert markdown headings, paragraphs, emphasis, links, lists, block quotes, code and images to plain HTML
 - Keep every word of the post unchanged and in its order
 - Keep heading levels and link addresses as written
+- Turn a link or an image into HTML only when its address has one of the named safe forms (`http`, `https`, `mailto`, or an address inside the site that starts with `/`, `./`, `../` or `#`); any other address is written as plain text
 - Escape the characters HTML needs escaped and add no script, style, wrapper, title or comment
 - Answer with the HTML only
