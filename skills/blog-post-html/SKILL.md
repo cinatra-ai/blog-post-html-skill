@@ -39,7 +39,7 @@ This skill applies to the step that writes the HTML, and only that step is offer
 | table with a `---` row | `<table>` with `<thead>`, `<tbody>`, `<tr>`, `<th>` and `<td>` |
 
 - A link and an image keep their address exactly as written.
-- An address whose scheme is `javascript`, `vbscript` or `data` is not a link: write the link text as plain text, or the image's alt text as plain text. Decide this on the address with spaces, tabs and line breaks removed and in lower case, so `JaVaScRiPt:` and ` java	script:` count too.
+- Only these addresses become a link or an image: one that starts with `http://`, `https://` or `mailto:` (in any letter case), one that starts with `/`, `./`, `../` or `#`, and one that has no `:` before its first `/`. Every other address is not a link: write the link text as plain text, or the image's alt text as plain text. An address that contains a control character (anything below U+0020, or U+007F) is never a link.
 - Lines of one paragraph stay in one `<p>`, joined by a line break in the HTML source.
 
 ## Rule 3: nothing else goes into the HTML
