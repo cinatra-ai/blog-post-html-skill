@@ -1,0 +1,24 @@
+{
+  "name": "@cinatra-ai/blog-post-html-skill",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "description": "Rules a model follows to turn a blog post's approved markdown into HTML for a WordPress page: the words stay exactly as approved, every markdown element becomes a plain HTML element that WordPress accepts as post content, and the answer is the HTML only. Consumed by @cinatra-ai/blog-wordpress-publish-agent.",
+  "type": "module",
+  "scripts": {
+    "test": "node extension-kind-gate.mjs --package-root ."
+  },
+  "files": [
+    "skills"
+  ],
+  "cinatra": {
+    "apiVersion": "cinatra.ai/v1",
+    "kind": "skill",
+    "vendor": {
+      "key": "cinatra-ai",
+      "name": "Cinatra"
+    },
+    "displayName": "Blog Post HTML Skill",
+    "skillRole": "injectable",
+    "dependencies": []
+  }
+}
